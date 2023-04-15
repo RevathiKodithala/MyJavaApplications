@@ -1,7 +1,7 @@
 {
   "Employee":[
   {
-         "Id":101,
+         
         "Name":"Revathi",
         "Age":20,
         "Salary":500000
@@ -10,7 +10,7 @@
   
  
   {
-         "Id":102,
+         
         "Name":"Harshini",
         "Age":22,
         "Salary":400000
@@ -18,7 +18,7 @@
   },
   
   {
-        "Id":103,
+        
         "Name":"Mohan",
         "Age":23,
         "Salary":600000
@@ -26,7 +26,7 @@
   },
  
   {
-        "Id":104,
+        
         "Name":"Chandu",
         "Age":26,
         "Salary":450000
@@ -34,7 +34,7 @@
   },
   
   {
-         "Id":105,
+         
         "Name":"Harika",
         "Age":22,
         "Salary":400000
@@ -42,7 +42,7 @@
   },
   
   {
-         "Id":106,
+         
         "Name":"Manu",
         "Age":22,
         "Salary":400000

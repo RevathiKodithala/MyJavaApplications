@@ -26,7 +26,7 @@ public class ReadDataFromJson  {
 		Connection con= DriverManager.getConnection(  
 				"jdbc:mysql://localhost:3306/mydb","root","root");
 		PreparedStatement ps=con.prepareStatement(  
-				"insert into emptab values(?,?,?,?)");  
+				"insert into emptab(Name,Age,Salary) values(?,?,?)");  
 
 
 		              
@@ -44,22 +44,22 @@ public class ReadDataFromJson  {
 	for(int i=0;i<array.size();i++) {
 		JSONObject employee=(JSONObject)array.get(i);
 		
-		Long Id=(Long)employee.get("Id");
+		//Long Id=(Long)employee.get("Id");
 	    String Name=(String)employee.get("Name");
 		Long Age=(Long) employee.get("Age");
 	    Long salary=(Long) employee.get("Salary");
 		
 		
 		System.out.println("Details of the "+i+" employee is ");
-		System.out.println("Id: "+Id);
+		//System.out.println("Id: "+Id);
 	    System.out.println("Name: "+Name);
 	    System.out.println("Age: "+Age);
 	    System.out.println("Salary: "+salary);
 	    //ps.setInt(1, Sno);
-	    ps.setLong(1, Id);
-		ps.setString(2, Name);
-		ps.setLong(3, Age);
-		ps.setLong(4, salary);
+	    //ps.setLong(1, Id);
+		ps.setString(1, Name);
+		ps.setLong(2, Age);
+		ps.setLong(3, salary);
 		
 		int x=ps.executeUpdate();  
 		System.out.println(x+" records affected");  
@@ -78,10 +78,10 @@ public class ReadDataFromJson  {
 			System.out.println("You Have Entered Wrong Id, please Enter Correct Id");
 		}
 		
-		catch(Exception e) {
+		/*catch(Exception e) {
 			{e.printStackTrace();
-		}
+		}*/
 	
 	
 
-}}}
+}}
