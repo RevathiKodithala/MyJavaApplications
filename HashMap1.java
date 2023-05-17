@@ -10,7 +10,7 @@ import java.util.TreeMap;
 
 public class HashMap1 {
 	public static void main(String []args) {
-		Map<Integer,String> hs=new LinkedHashMap<Integer,String>();
+		Map<Integer,String> hs=Collections.synchronizedMap(new LinkedHashMap<Integer,String>());
 		hs.put(103,"RK");
 		hs.put(101,"RM");
 		hs.put(104,"RL");
