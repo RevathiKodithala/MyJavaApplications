@@ -16,7 +16,7 @@ public class ArrayList1  {
 	//List a=new ArrayList();
 	//ArrayList all=new ArrayList();
 	//ArrayList<Integer> ah=new ArrayList<Integer>();
-	ArrayList<String> als=new ArrayList<String>();
+	ArrayList<String> als=Collections.Synchronized(new ArrayList<String>());
 	als.add("Fruits");
 	als.add("Animals");
 	als.add("Vehicles");
